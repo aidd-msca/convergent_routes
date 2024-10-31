@@ -1,0 +1,8 @@
+process_data: False
+skip_cycles: False
+files:
+  - ./convergent_routes/data/reaction_data/reactions_atommapped_USPTO.tsv
+use_time: False
+document_id: document_id
+max_file: 5000
+store_root: ./convergent_routes/data/reaction_data/raw_USPTO

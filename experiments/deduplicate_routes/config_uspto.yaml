@@ -1,0 +1,5 @@
+routes_root: ./convergent_routes/data/raw_USPTO
+remove_duplicates: True
+remove_stereoisomers: True
+store_root: ./convergent_routes/data/raw_USPTO_cleaned
+store_fp: routes_cleaned

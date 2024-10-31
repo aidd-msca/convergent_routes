@@ -1,0 +1,29 @@
+experiment_name: uspto_emolecules_individual
+k: 10
+batch_size: 32
+searchsettings:
+  max_time: 120
+  max_iterations: 300
+  max_len_route: 8
+  target_molecule_limit: 300
+single_step_model:
+  model_name: chemformer
+  module_path: ../ssbenchmark/external_models/aidd_chemformer
+  use_gpu: True
+  model_settings: {'model_path':'./data/models/uspto_last_model.ckpt',
+    'vocab_path': '../ssbenchmark/external_models/aidd_chemformer/bart_vocab_downstream.txt',
+    'num_beams': 5}
+target_molecules: null
+target_molecules_fp: ./experiments/convergent_search/uspto_emolecules/target_molecules_randomselection.tsv
+group_col: route
+molecule_col: target_molecule
+buildingblocks_fp: ./experiments/convergent_search/uspto_emolecules/building_blocks_emolecules.tsv
+reference_fp: ./experiments/convergent_search/uspto_emolecules/uspto_test_routes.json
+results_fp: ./experiments/convergent_search/uspto_emolecules
+store_routes:
+  n: 100
+  store_fp: ./experiments/convergent_search/uspto_emolecules
+default_analyse_search: True
+individual: True
+keep_max_len: False
+subsample: null
