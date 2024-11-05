@@ -54,9 +54,11 @@ We highly encourage the use of GPU inference to speed up the search process.
 
 ### C. Single-Step Model
 
-The approach assumes that you have a trained single-step model that inputs product SMILES and outputs reactant SMILES. The fine-tuned USPTO model used in [1] is available at: [INCLUDE LINK]
+The approach assumes that you have a trained single-step model that inputs product SMILES and outputs reactant SMILES. The fine-tuned USPTO model used in [1] is available at [zenodo.org/records/14018721](https://zenodo.org/records/14018721).
 
 ## Datasets
+All USPTO datasets and routes can be found at [zenodo.org/records/14018721](https://zenodo.org/records/14018721).
+
 1. Processed Reaction Data <br>
 Tab separated comma file containing atom-mapped reactions and project associated to each reaction
 
